@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/found-ark/static/css/main.1fd5297c.css",
+    "main.js": "/found-ark/static/js/main.1f00d1cf.js",
+    "static/media/bg-tree.jpg": "/found-ark/static/media/bg-tree.df303d85c9ffae3ebceb.jpg",
+    "static/media/bg-city.jpg": "/found-ark/static/media/bg-city.1c839fa994147ee1efdb.jpg",
+    "static/media/berserker.jpg": "/found-ark/static/media/berserker.ad37804350cefeaa891b.jpg",
+    "static/media/scrapper.jpg": "/found-ark/static/media/scrapper.9073d25732ff729d9f18.jpg",
+    "static/media/bard.jpg": "/found-ark/static/media/bard.fc4b220e460240a3f789.jpg",
+    "static/media/deadeye.jpg": "/found-ark/static/media/deadeye.9811d19f950c3d6064ee.jpg",
+    "static/media/gunlancer.jpg": "/found-ark/static/media/gunlancer.dc46b3cf7fa9dff05a6d.jpg",
+    "static/media/paladin.jpg": "/found-ark/static/media/paladin.20245b99351e408e40f3.jpg",
+    "static/media/sharpshooter.jpg": "/found-ark/static/media/sharpshooter.f7be2edd070db89e3e43.jpg",
+    "static/media/artillerist.jpg": "/found-ark/static/media/artillerist.3e7a30b7d8b633a57df2.jpg",
+    "static/media/wardancer.jpg": "/found-ark/static/media/wardancer.d6f32cf0a332482d9c0b.jpg",
+    "static/media/shadowhunter.jpg": "/found-ark/static/media/shadowhunter.31add21c91d2de544d9e.jpg",
+    "static/media/soulfist.jpg": "/found-ark/static/media/soulfist.b95c7ec7df99d34ee680.jpg",
+    "static/media/gunslinger.jpg": "/found-ark/static/media/gunslinger.acfead88a12b8040289f.jpg",
+    "static/media/deathblade.jpg": "/found-ark/static/media/deathblade.92a99ca40282a32c57a2.jpg",
+    "static/media/bg-giant.jpg": "/found-ark/static/media/bg-giant.f7f61b3debc10226decc.jpg",
+    "static/media/glaivier.jpg": "/found-ark/static/media/glaivier.c774d2dbe61b600a6bee.jpg",
+    "static/media/destroyer.jpg": "/found-ark/static/media/destroyer.9422e1a9c19ecf575b75.jpg",
+    "static/media/striker.jpg": "/found-ark/static/media/striker.7b1c2ca759b724c946c2.jpg",
+    "static/media/sorceress.jpg": "/found-ark/static/media/sorceress.4da7ab59470302562411.jpg",
+    "static/media/bg-sky.jpg": "/found-ark/static/media/bg-sky.9794232dd23ebd5d3b4d.jpg",
+    "index.html": "/found-ark/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.1fd5297c.css",
+    "static/js/main.1f00d1cf.js"
+  ]
+}
