@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/found-ark/static/css/main.1fd5297c.css",
-    "main.js": "/found-ark/static/js/main.1f00d1cf.js",
+    "main.css": "/found-ark/static/css/main.bae0b3d1.css",
+    "main.js": "/found-ark/static/js/main.bf6ee039.js",
     "static/media/bg-tree.jpg": "/found-ark/static/media/bg-tree.df303d85c9ffae3ebceb.jpg",
     "static/media/bg-city.jpg": "/found-ark/static/media/bg-city.1c839fa994147ee1efdb.jpg",
     "static/media/berserker.jpg": "/found-ark/static/media/berserker.ad37804350cefeaa891b.jpg",
@@ -26,7 +26,7 @@
     "index.html": "/found-ark/index.html"
   },
   "entrypoints": [
-    "static/css/main.1fd5297c.css",
-    "static/js/main.1f00d1cf.js"
+    "static/css/main.bae0b3d1.css",
+    "static/js/main.bf6ee039.js"
   ]
 }
