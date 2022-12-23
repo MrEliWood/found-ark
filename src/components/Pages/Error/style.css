@@ -1,0 +1,7 @@
+.FourContainer {
+	width: 100%;
+}
+
+.FourErrMsg {
+	margin-bottom: var(--medium);
+}

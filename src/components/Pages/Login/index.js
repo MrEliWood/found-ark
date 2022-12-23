@@ -21,7 +21,7 @@ function Login({ handleLoginSubmit, loginError }) {
     const handleFormSubmit = (e) => {
         // Preventing the default behavior of the form submit (which is to refresh the page)
         e.preventDefault();
-        if (userReg.test(username) == false || passReg.test(password) == false) {
+        if (userReg.test(username) === false || passReg.test(password) === false) {
             return
         } else {
             const loginData = { username, password };
