@@ -206,7 +206,6 @@ function App() {
 			<Routes>
 				<Route path='*' element={<Error />} />
 				<Route path='/' element={<Groups user={user} />} />
-				<Route path='.' element={<Groups user={user} />} />
 				<Route path='found-ark' element={<Groups user={user} />} />
 				<Route path='creategroup' element={<CreateGroup user={user} />} />
 				<Route path='mygroups' element={<MyGroups user={user} />} />
