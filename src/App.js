@@ -205,7 +205,7 @@ function App() {
 			<Header user={user} logout={logout} notis={notis} setNotis={setNotis} />
 			<Routes>
 				<Route path='*' element={<Error />} />
-				<Route path='found-ark/' element={<Groups user={user} />} />
+				<Route path='found-ark' element={<Groups user={user} />} />
 				<Route path='creategroup' element={<CreateGroup user={user} />} />
 				<Route path='mygroups' element={<MyGroups user={user} />} />
 				<Route path='group/:groupId' element={<Group user={user} sendNoti={sendNoti} setBackground={setBackground} />} />
