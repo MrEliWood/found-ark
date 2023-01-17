@@ -15,18 +15,16 @@ function AllGroups({ user, activeTags }) {
 	const getAllGroups = async () => {
 		try {
 			if (token) {
-				const res = await axios.get(`https://found-ark-backend.uw.r.appspot.com/api/groups`, {
+				const res = await axios.get(`https://found-ark-backend.uw.r.appspot.com/api/groups/`, {
 					headers: {
 						Authorization: `token ${token}`
 					}
 				});
 				//setAllGroups(res.data);
-				console.log(res.data);
 				filterGroups(res.data);
 			} else {
-				const res = await axios.get(`https://found-ark-backend.uw.r.appspot.com/api/groups`);
+				const res = await axios.get(`https://found-ark-backend.uw.r.appspot.com/api/groups/`);
 				//setAllGroups(res.data);
-				console.log(res.data);
 				filterGroups(res.data);
 			}
 		} catch (err) {

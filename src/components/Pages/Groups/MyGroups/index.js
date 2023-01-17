@@ -16,7 +16,6 @@ function MyGroups({ user, activeTags }) {
 					chars.joined = filterGroups(chars.joined);
 				}
 			}
-			console.log(res.data.characters);
 			setMyChars(res.data.characters);
 		} catch (err) {
 			console.log(err);
