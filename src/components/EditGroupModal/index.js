@@ -78,7 +78,7 @@ function EditGroupModal({ setOpenModal, setGroup, group }) {
 			}
 			const token = localStorage.getItem('foundArkJwt');
 			const res = await axios.put(
-				`https://found-ark-backend.uw.r.appspot.com/api/groups/${group.id}`,
+				`https://found-ark-server.herokuapp.com/api/groups/${group.id}`,
 				{
 					group_name: groupName,
 					description: description,

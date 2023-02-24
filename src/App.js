@@ -38,7 +38,7 @@ function App() {
 
 	const getAllNotis = async (receiver_id) => {
 		try {
-			const res = await axios.get(`https://found-ark-backend.uw.r.appspot.com/api/notifications/receiver/${receiver_id}`, {
+			const res = await axios.get(`https://found-ark-server.herokuapp.com/api/notifications/receiver/${receiver_id}`, {
 				headers: {
 					Authorization: `token ${token}`
 				}
@@ -53,7 +53,7 @@ function App() {
 	};
 
 	useEffect(() => {
-		setSocket(io('https://found-ark-backend.uw.r.appspot.com'));
+		setSocket(io('https://found-ark-server.herokuapp.com'));
 	}, []);
 
 	useEffect(() => {
@@ -159,7 +159,7 @@ function App() {
 
 	const handleLoginSubmit = async (loginData) => {
 		try {
-			const res = await axios.post('https://found-ark-backend.uw.r.appspot.com/api/users/login', {
+			const res = await axios.post('https://found-ark-server.herokuapp.com/api/users/login', {
 				user_name: loginData.username,
 				password: loginData.password
 			});
@@ -177,7 +177,7 @@ function App() {
 
 	const handleSignupSubmit = async (signupData) => {
 		try {
-			const res = await axios.post('https://found-ark-backend.uw.r.appspot.com/api/users/signup', {
+			const res = await axios.post('https://found-ark-server.herokuapp.com/api/users/signup', {
 				user_name: signupData.username,
 				password: signupData.password,
 				region: signupData.region,

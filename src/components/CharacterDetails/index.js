@@ -116,7 +116,7 @@ function CharacterDetails({ char, editChar, setCharModalOpen, setSelectedChar, a
 
 				try {
 					await axios.put(
-						`https://found-ark-backend.uw.r.appspot.com/api/characters/${char.id}`,
+						`https://found-ark-server.herokuapp.com/api/characters/${char.id}`,
 						{
 							char_name: charData.pcName,
 							class: charData.pcClassName,

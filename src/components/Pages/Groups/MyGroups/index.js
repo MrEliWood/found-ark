@@ -10,7 +10,7 @@ function MyGroups({ user, activeTags }) {
 	//get my groups
 	const getMyChars = async () => {
 		try {
-			const res = await axios.get(`https://found-ark-backend.uw.r.appspot.com/api/users/${user?.id}`);
+			const res = await axios.get(`https://found-ark-server.herokuapp.com/api/users/${user?.id}`);
 			if (res?.data?.characters) {
 				for (const chars of res.data.characters) {
 					chars.joined = filterGroups(chars.joined);

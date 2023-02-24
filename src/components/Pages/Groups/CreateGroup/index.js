@@ -89,7 +89,7 @@ function CreateGroup(props) {
 	// fetch character names
 	const getAllChars = async () => {
 		try {
-			const res = await axios.get(`https://found-ark-backend.uw.r.appspot.com/api/characters/owner/${tokenData.id}`);
+			const res = await axios.get(`https://found-ark-server.herokuapp.com/api/characters/owner/${tokenData.id}`);
 			console.log(res.data);
 			setAllChars(res.data);
 			setCharId(res?.data[0]?.id);
@@ -121,7 +121,7 @@ function CreateGroup(props) {
 				timeInfo = new Date(`${day}T${time}:00.000${timeZone.substring(4, 10)}`);
 			}
 			const res = await axios.post(
-				'https://found-ark-backend.uw.r.appspot.com/api/groups',
+				'https://found-ark-server.herokuapp.com/api/groups',
 				{
 					group_name: groupName,
 					description: description,

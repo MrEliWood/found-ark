@@ -15,7 +15,7 @@ function AllGroups({ user, activeTags }) {
 	const getAllGroups = async () => {
 		try {
 			if (token) {
-				const res = await axios.get(`https://found-ark-backend.uw.r.appspot.com/api/groups/`, {
+				const res = await axios.get(`https://found-ark-server.herokuapp.com/api/groups/`, {
 					headers: {
 						Authorization: `token ${token}`
 					}
@@ -23,7 +23,7 @@ function AllGroups({ user, activeTags }) {
 				//setAllGroups(res.data);
 				filterGroups(res.data);
 			} else {
-				const res = await axios.get(`https://found-ark-backend.uw.r.appspot.com/api/groups/`);
+				const res = await axios.get(`https://found-ark-server.herokuapp.com/api/groups/`);
 				//setAllGroups(res.data);
 				filterGroups(res.data);
 			}

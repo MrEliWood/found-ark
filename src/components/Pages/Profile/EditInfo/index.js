@@ -12,7 +12,7 @@ function EditInfo({ user }) {
 
 	// const getAllChars = async () => {
 	//     try {
-	//         const res = await axios.get(`https://found-ark-backend.uw.r.appspot.com/api/characters/owner/${tokenData.id}`)
+	//         const res = await axios.get(`https://found-ark-server.herokuapp.com/api/characters/owner/${tokenData.id}`)
 	//         setAllChars(res.data)
 	//     } catch (err) {
 	//         console.log(err);
@@ -42,7 +42,7 @@ function EditInfo({ user }) {
 		try {
 			const token = localStorage.getItem('foundArkJwt');
 			const res = await axios.put(
-				`https://found-ark-backend.uw.r.appspot.com/api/users/${user.id}`,
+				`https://found-ark-server.herokuapp.com/api/users/${user.id}`,
 				{
 					region: region,
 					introduction: introduction

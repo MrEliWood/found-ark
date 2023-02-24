@@ -12,7 +12,7 @@ function Notifications(props, { handleNotiOpen }) {
 		try {
 			const token = localStorage.getItem('foundArkJwt');
 			const res = await axios.put(
-				`https://found-ark-backend.uw.r.appspot.com/api/notifications/${notiId}`,
+				`https://found-ark-server.herokuapp.com/api/notifications/${notiId}`,
 				{},
 				{
 					headers: {
@@ -29,7 +29,7 @@ function Notifications(props, { handleNotiOpen }) {
 	const delNoti = async (notiId) => {
 		try {
 			const token = localStorage.getItem('foundArkJwt');
-			const res = await axios.delete(`https://found-ark-backend.uw.r.appspot.com/api/notifications/${notiId}`, {
+			const res = await axios.delete(`https://found-ark-server.herokuapp.com/api/notifications/${notiId}`, {
 				headers: {
 					Authorization: `token ${token}`
 				}

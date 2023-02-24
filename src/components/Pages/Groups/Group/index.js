@@ -43,7 +43,7 @@ function Group({ user, sendNoti, setBackground }) {
 	// get all groups
 	const getGroup = async () => {
 		try {
-			const res = await axios.get(`https://found-ark-backend.uw.r.appspot.com/api/groups/${groupId}`);
+			const res = await axios.get(`https://found-ark-server.herokuapp.com/api/groups/${groupId}`);
 			setGroup(res.data);
 			console.log(res.data);
 		} catch (err) {
@@ -72,7 +72,7 @@ function Group({ user, sendNoti, setBackground }) {
 	const getAllChars = async () => {
 		try {
 			if (user?.logged_in) {
-				const res = await axios.get(`https://found-ark-backend.uw.r.appspot.com/api/characters/owner/${user.id}`);
+				const res = await axios.get(`https://found-ark-server.herokuapp.com/api/characters/owner/${user.id}`);
 				console.log(res.data);
 				setAllChars(res.data);
 				setCharId(res?.data[0]?.id);
@@ -96,7 +96,7 @@ function Group({ user, sendNoti, setBackground }) {
 		try {
 			const token = localStorage.getItem('foundArkJwt');
 			const res = await axios.post(
-				`https://found-ark-backend.uw.r.appspot.com/api/groupmembers/${groupId}`,
+				`https://found-ark-server.herokuapp.com/api/groupmembers/${groupId}`,
 				{
 					char_id: charId
 				},
@@ -118,7 +118,7 @@ function Group({ user, sendNoti, setBackground }) {
 		e.preventDefault();
 		try {
 			const token = localStorage.getItem('foundArkJwt');
-			const res = await axios.delete(`https://found-ark-backend.uw.r.appspot.com/api/groupmembers/${groupId}`, {
+			const res = await axios.delete(`https://found-ark-server.herokuapp.com/api/groupmembers/${groupId}`, {
 				headers: {
 					Authorization: `token ${token}`
 				},
@@ -140,7 +140,7 @@ function Group({ user, sendNoti, setBackground }) {
 		try {
 			const token = localStorage.getItem('foundArkJwt');
 			const res = await axios.put(
-				`https://found-ark-backend.uw.r.appspot.com/api/groupmembers/${groupId}`,
+				`https://found-ark-server.herokuapp.com/api/groupmembers/${groupId}`,
 				{
 					char_id: e.target.value
 				},
@@ -161,7 +161,7 @@ function Group({ user, sendNoti, setBackground }) {
 		e.preventDefault();
 		try {
 			const token = localStorage.getItem('foundArkJwt');
-			const res = await axios.delete(`https://found-ark-backend.uw.r.appspot.com/api/groupmembers/${groupId}`, {
+			const res = await axios.delete(`https://found-ark-server.herokuapp.com/api/groupmembers/${groupId}`, {
 				headers: {
 					Authorization: `token ${token}`
 				},

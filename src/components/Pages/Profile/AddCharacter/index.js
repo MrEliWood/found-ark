@@ -81,7 +81,7 @@ function AddCharacter() {
 
 		try {
 			await axios.post(
-				'https://found-ark-backend.uw.r.appspot.com/api/characters',
+				'https://found-ark-server.herokuapp.com/api/characters',
 				{
 					char_name: charName,
 					class: className,

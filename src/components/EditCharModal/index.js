@@ -59,7 +59,7 @@ function EditCharModal({ setOpenModal, char }) {
 
 		try {
 			await axios.put(
-				`https://found-ark-backend.uw.r.appspot.com/api/characters/${char.id}`,
+				`https://found-ark-server.herokuapp.com/api/characters/${char.id}`,
 				{
 					char_name: charName,
 					class: className,

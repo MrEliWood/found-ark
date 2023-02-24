@@ -26,7 +26,7 @@ function DiscordHelpModal({ setOpenModal, setGroup, group }) {
 		try {
 			const token = localStorage.getItem('foundArkJwt');
 			const res = await axios.put(
-				`https://found-ark-backend.uw.r.appspot.com/api/groups/${group.id}`,
+				`https://found-ark-server.herokuapp.com/api/groups/${group.id}`,
 				{
 					discord: link + ' ' + server + ' ' + channel
 				},

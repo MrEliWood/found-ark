@@ -24,7 +24,7 @@ function DelGroupModal({ setDelGroupModalOpen, group, sendNoti }) {
 		try {
 			navigate('/');
 			const token = localStorage.getItem('foundArkJwt');
-			const res = await axios.delete(`https://found-ark-backend.uw.r.appspot.com/api/groups/${group.id}`, {
+			const res = await axios.delete(`https://found-ark-server.herokuapp.com/api/groups/${group.id}`, {
 				headers: {
 					Authorization: `token ${token}`
 				}

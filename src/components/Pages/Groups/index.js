@@ -153,7 +153,7 @@ function Groups({ user }) {
 	// get all tags
 	const getAllTags = async () => {
 		try {
-			const res = await axios.get(`https://found-ark-backend.uw.r.appspot.com/api/tags`);
+			const res = await axios.get(`https://found-ark-server.herokuapp.com/api/tags`);
 			let sortedTags = res.data;
 			// remove tags with no groups
 			for (let i = 0; i < sortedTags.length; i++) {
